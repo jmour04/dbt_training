@@ -21,3 +21,5 @@ models:
   dbt_training:
     staging:
       +materialized: view
+    marts:
+      +materialized: table
