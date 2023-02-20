@@ -21,5 +21,7 @@ models:
   dbt_training:
     staging:
       +materialized: view
+    intermediate:
+      +materialized: ephemeral
     marts:
       +materialized: table
