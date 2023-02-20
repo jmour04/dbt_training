@@ -37,8 +37,10 @@ final as (
             as total_revenue_in_usd,
         nvl(order_amounts_by_custmer.total_quantity, 0) as total_quantity,
         customers.created_at,
+        customers.created_at_est,
         customers.updated_at,
-        customers.is_active
+        customers.updated_at_est,
+        customers.is_active        
 
     from customers
 
