@@ -1,0 +1,23 @@
+dbt_training:
+  outputs:
+    dev:
+      account: yl45797.east-us-2.azure
+      database: analytics_046
+      password: 5e448iP&1K1x1Sdn
+      role: developer_046
+      schema: dbt_jmourlam
+      threads: 1
+      type: snowflake
+      user: student046
+      warehouse: developer_wh_046
+    prod:
+      account: yl45797.east-us-2.azure
+      database: analytics_046
+      password: 5e448iP&1K1x1Sdn
+      role: developer_046 # Should be a dedicated role
+      schema: dbt_prod # May or may not be used (depending on macro)
+      threads: 1
+      type: snowflake
+      user: student046 # Should be a dedicated user
+      warehouse: developer_wh_046
+  target: dev
