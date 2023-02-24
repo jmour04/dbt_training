@@ -10,7 +10,7 @@ dbt_training:
       type: snowflake
       user: student046
       warehouse: developer_wh_046
-    CI:
+    ci:
       account: yl45797.east-us-2.azure
       database: analytics_046
       password: "{{ env_var('DBT_PASSWORD') }}"
