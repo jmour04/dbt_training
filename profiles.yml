@@ -15,7 +15,7 @@ dbt_training:
       database: analytics_046
       password: "{{ env_var('DBT_PASSWORD') }}"
       role: developer_046
-      schema: dbt_jmourlam
+      schema: dbt_ci
       threads: 1
       type: snowflake
       user: student046
