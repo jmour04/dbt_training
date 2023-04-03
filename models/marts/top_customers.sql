@@ -19,7 +19,7 @@ final as (
 
     order by total_revenue_in_usd desc
 
-    limit 3
+    limit 5
 
 )
 
